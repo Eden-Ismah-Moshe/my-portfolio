@@ -18,3 +18,11 @@ header {
   gap: 1.2rem;
   justify-content: center;
 }
+
+/* ==================== MEDIA QUERIS (SMALL DEVICES) ====================== */
+
+@media screen and (max-width: 600px) {
+  header {
+    overflow: visible;
+  }
+}
