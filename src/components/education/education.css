@@ -1,0 +1,7 @@
+.under-construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ensures the container takes the full height of the viewport */
+  text-align: center; /* Optional: center-aligns the text */
+}

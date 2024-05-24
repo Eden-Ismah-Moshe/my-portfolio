@@ -23,6 +23,5 @@ const App = () => {
     </>
   );
 };
-/* <Experience />*/
-/*<Contact />*/
+
 export default App;

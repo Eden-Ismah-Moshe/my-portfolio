@@ -1,14 +1,9 @@
-.container.contact_container {
+.contact_container {
+  padding-bottom: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box; /*width: 50%;
-  display: grid;
-  grid-template-columns: 35% 58%;
-  gap: 12%;
-  */
+  height: 100vh; /* Ensures the container takes the full height of the viewport */
 }
 
 .message {

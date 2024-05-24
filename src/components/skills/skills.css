@@ -24,14 +24,6 @@ section#skills h2 {
   transition: var(--transition);
 }
 
-.other_experience_container > div {
-  background: var(--color-bg-variant);
-  padding: 1rem 5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-}
-
 .development_experience_container > div:hover,
 .other_experience_container > div:hover {
   background: transparent;
@@ -54,6 +46,18 @@ section#skills h2 {
   column-gap: 0.5rem;
 }
 
+.container.other_experience_container {
+  width: 40%;
+}
+
+.other_experience_container > div {
+  background: var(--color-bg-variant);
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
 .experience_content_others {
   margin-left: 100px;
   display: grid;
@@ -66,8 +70,39 @@ section#skills h2 {
   display: flex;
   gap: 1rem;
 }
+/* ==================== MEDIA QUERIS (VERY LARGE DEVICES) ====================== */
 
-/*other_experience_container*/
+@media screen and (min-width: 2040px) {
+}
+
+/* ==================== MEDIA QUERIS (MEDIUM-LARGE DEVICES) ====================== */
+
+@media screen and (min-width: 800px) {
+  .experience_content {
+    margin-left: 60px;
+    gap: 10px;
+  }
+
+  .experience_others {
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .experience_content_others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-left: 10px;
+  }
+
+  .experience_item {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+  }
+}
+
 /* ==================== MEDIA QUERIS (MEDIUM DEVICES) ====================== */
 
 @media screen and (max-width: 1024px) {
@@ -79,8 +114,32 @@ section#skills h2 {
     padding: 2rem;
     margin: 0 auto;
   }
+
+  .container.other_experience_container {
+    width: 65%;
+    padding: 1rem 1rem;
+  }
+
   .experience_content {
     padding: 1rem;
+  }
+
+  .experience_others {
+    text-align: center;
+  }
+
+  .experience_content_others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-left: 10px;
+  }
+
+  .experience_item {
+    display: flex;
+    align-items: center;
+    padding: 1px;
   }
 }
 
@@ -91,8 +150,35 @@ section#skills h2 {
     gap: 1rem;
   }
 
-  .experience_container > div {
+  .development_experience_container > div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .container.other_experience_container {
+    width: 95%;
+    padding: 1rem 1rem;
+  }
+
+  .experience_content {
+    padding: 1rem;
+  }
+
+  .experience_others {
+    text-align: center;
+  }
+
+  .experience_content_others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-left: 5px;
+  }
+
+  .experience_item {
+    display: flex;
+    align-items: center;
+    padding: 1px;
   }
 }
