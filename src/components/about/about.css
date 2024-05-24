@@ -1,12 +1,24 @@
+section#about {
+  padding: 2rem 0;
+}
+
+section#about h4 {
+  margin-bottom: 0.5rem;
+}
+
+section#about h2 {
+  margin-bottom: 3rem;
+}
+
 .about_container {
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 40% 50%;
+  gap: 10%;
   align-items: center;
 }
 
 .about_me {
-  width: 70%;
+  width: 80%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -15,19 +27,28 @@
     var(--color-primary),
     transparent
   );
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  padding: 0rem; Add padding to create space for the background */
 }
 
-.about_me-image {
+.about_me_image {
+  width: 100%; /* Make sure the image container takes full width within the padding */
+  max-width: 100%; /* Adjust as needed to keep some background visible */
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  transform: rotate(0);
   transition: var(--transition);
 }
 
-.about_me-image:hover {
-  transform: rotate(0);
+.about_me_image img {
+  width: 100%; /* Ensure the image itself is responsive */
+  height: auto;
+}
+
+.about_me_image:hover {
+  transform: rotate(10deg);
 }
 
 .about_cards {

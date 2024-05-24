@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/myLogo.png";
+import ME from "../../assets/me1.png";
 import { GiTeacher } from "react-icons/gi";
 import { MdOutlineComputer } from "react-icons/md";
 

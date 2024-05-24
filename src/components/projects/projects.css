@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+section#projects {
+  padding: 2rem 0;
+}
+
+section#projects h4 {
+  margin-bottom: 0.5rem;
+}
+
+section#projects h2 {
+  margin-bottom: 3rem;
+  margin: 0 0 1rem;
+}
+
+.projects_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.project_card {
+  background: var(--color-bg-variant);
+  grid-template-rows: 2fr 2.8rem;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  height: 545px;
+}
+
+.project_card:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.project_card_image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.project_card h3 {
+  margin: 1.2rem 0 1rem;
+}
+
+.project_card small {
+  font-size: medium;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.project_card_cta {
+  padding-top: 15px;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  /* margin: 2rem 0 1rem;*/
+}
+
+/* ==================== WORK PROCESS ====================== 
+
+.process_container {
+  display: grid;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid var(--color-bg-variant);
+}
+
+.process-headline {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.process-content-section-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  justify-items: baseline;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.section-one-des,
+.section-two-des {
+  margin: 1rem 0 0 2rem;
+}
+.section-one-des a {
+  display: flex;
+  align-items: center;
+}
+
+.process-content-section-two {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+.image:hover {
+  transition: transform 0.25s ease;
+  transform: scale(1.5);
+  transform-origin: 40% 20%;
+}
+.project-image,
+.portfolio-image {
+  width: 20rem;
+  margin-top: 1rem;
+  transform: rotate(1.5deg);
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.logo-description {
+  font-weight: 400;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.zerli-logo {
+  width: 12rem;
+}
+
+.me-image {
+  width: 12rem;
+  margin-left: 2rem;
+  object-fit: contain;
+  background: linear-gradient(var(--color-primary), transparent);
+  border-radius: 12rem;
+  overflow: hidden;
+}
+
+.donkey-logo {
+  width: 15rem;
+}
+
+.donkey-pic {
+  width: 12rem;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.pic-2 {
+  margin-left: 5rem;
+  height: 11rem;
+}
+
+.donkey-pic-3 {
+  border-radius: 1rem;
+  width: 15rem;
+  margin-top: 2rem;
+  transform: rotate(-2deg);
+}
+
+.project-video {
+  display: grid;
+  justify-content: center;
+}
+
+.project-video {
+  width: 25rem;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+*/
+
+/* ==================== MEDIA QUERIS (VERY LARGE DEVICES) ====================== */
+
+@media screen and (min-width: 2040px) {
+  /* .container.portfolio_container {
+    width: 70%;
+  } */
+  .process_container {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .work-process-section {
+    width: 80%;
+  }
+}
+
+/* ==================== MEDIA QUERIES (LARGE DEVICES) ====================== 
+
+@media screen and (min-width: 1024px) {
+  .donkey-pic {
+    width: 65%;
+  }
+
+  .donkey-pic-3 {
+    width: 25rem;
+  }
+
+  .section-one-des,
+  .section-two-des {
+    font-size: larger;
+  }
+}*/
+
+/* ==================== MEDIA QUERIS (MEDIUM-LARGE DEVICES) ====================== */
+
+@media screen and (min-width: 800px) {
+  .project_card_image img {
+    height: 15rem;
+  }
+  .small-devices {
+    display: none;
+  }
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+
+@media screen and (max-width: 1024px) {
+  .container.projects_container {
+    width: 95%;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ====================== */
+
+@media screen and (max-width: 800px) {
+  .projects_container {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    justify-items: center;
+    width: 90%;
+  }
+  .container.projects_container {
+    /* width: auto; */
+    margin: 0 1rem;
+    justify-items: center;
+  }
+  .poroject_item {
+    height: auto;
+  }
+}

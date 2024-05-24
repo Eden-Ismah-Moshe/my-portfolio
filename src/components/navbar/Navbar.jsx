@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import { IoHomeOutline } from "react-icons/io5";
 import { GrUserFemale } from "react-icons/gr";
+import { IoCloudDoneOutline } from "react-icons/io5";
 import { MdWorkOutline } from "react-icons/md";
 import { GiBlackBook } from "react-icons/gi";
 import { TfiWrite } from "react-icons/tfi";
@@ -27,9 +28,16 @@ const Navbar = () => {
         <GrUserFemale />
       </a>
       <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <IoCloudDoneOutline />
+      </a>
+      <a
+        href="#projects"
+        onClick={() => setActiveNav("#projects")}
+        className={activeNav === "#projects" ? "active" : ""}
       >
         <MdWorkOutline />
       </a>
