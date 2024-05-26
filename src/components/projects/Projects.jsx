@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./projects.css";
 import PIC1 from "../../assets/stepper.jpg";
 import PIC2 from "../../assets/instaguard.png";
@@ -57,7 +57,7 @@ const Modal = ({ project, onClose }) => {
 
         <div className="tags">
           {project.tags.map((tag) => (
-            <div className="tag">
+            <div className="tag" key={tag}>
               <div style={{ padding: "5px" }}>{tag}</div>
             </div>
           ))}
@@ -68,9 +68,17 @@ const Modal = ({ project, onClose }) => {
     </div>
   );
 };
-/*<h4>{project.tags.join(", ")}</h4>*/
+
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }, [selectedProject]);
 
   const handleDetailsClick = (project) => {
     setSelectedProject(project);

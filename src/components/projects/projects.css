@@ -88,6 +88,8 @@ section#projects h2 {
   max-width: 500px;
   width: 100%;
   position: relative;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; /* Limit the height to 80% of the viewport height */
 }
 
 .close_button {
@@ -130,6 +132,11 @@ section#projects h2 {
   color: var(--bg-white);
   background-color: var(--color-bg);
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+
 /* ==================== MEDIA QUERIES ====================== */
 
 @media screen and (min-width: 800px) {

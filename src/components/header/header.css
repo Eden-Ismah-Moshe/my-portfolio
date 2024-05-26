@@ -1,7 +1,9 @@
 header {
-  height: 100vh;
-  padding-top: 4rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding-top: 15rem;
 }
 
 .header_container {

@@ -34,8 +34,8 @@ section#about h2 {
 }
 
 .about_me_image {
-  width: 100%; /* Make sure the image container takes full width within the padding */
-  max-width: 100%; /* Adjust as needed to keep some background visible */
+  width: 100%;
+  max-width: 100%;
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(0);
@@ -91,7 +91,8 @@ section#about h2 {
 
 .about_content p {
   margin: 2rem 0 2.6rem;
-  color: var(--color-light);
+  /* color: var(--color-light);*/
+  color: white;
 }
 
 /* ==================== MEDIA QUERIS (LARGE DEVICES) ====================== */

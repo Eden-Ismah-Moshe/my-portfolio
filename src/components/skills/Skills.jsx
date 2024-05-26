@@ -15,6 +15,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { VscVscode } from "react-icons/vsc";
 import { SiPostman } from "react-icons/si";
 import { SiJupyter } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -90,6 +91,10 @@ const Skills = () => {
               <SiJupyter />
               <h4>Jupyter</h4>
             </article>
+            <article className="experience_item">
+              <SiMongodb />
+              <h4>Mongo DB</h4>
+            </article>
           </div>
         </div>
       </div>
@@ -97,50 +102,4 @@ const Skills = () => {
   );
 };
 
-/*
-
- */
-
-/*
-
-
-         <div className="container experience_container">
-        <div className="experience_frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience_content">
-            <article className="experience_item">
-              <h4>HTML</h4>
-            </article>
-            <article className="experience_item">
-              <h4>CSS</h4>
-            </article>
-            <article className="experience_item">
-              <h4>JavaScript</h4>
-            </article>
-            <article className="experience_item">
-              <h4>React</h4>
-            </article>
-          </div>
-        </div>
-
-        <div className="experience_Software_Development">
-          <h3>Software Development</h3>
-          <div className="experience_content">
-            <article className="experience_details">
-              <h4>C</h4>
-            </article>
-            <article className="experience_details">
-              <h4>SQL</h4>
-            </article>
-            <article className="experience_details">
-              <h4>Java</h4>
-            </article>
-            <article className="experience_details">
-              <h4>Python</h4>
-            </article>
-          </div>
-        </div>
-      </div>
-      
-      */
 export default Skills;
