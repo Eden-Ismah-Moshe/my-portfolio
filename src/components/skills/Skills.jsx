@@ -4,9 +4,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { SiC } from "react-icons/si";
 import { SiCoursera } from "react-icons/si";
-
 import { SiCplusplus } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";

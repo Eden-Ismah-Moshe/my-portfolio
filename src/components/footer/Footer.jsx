@@ -4,6 +4,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import {
+  linkedinLink,
+  githubLink,
+  facebookLink,
+  instagramLink,
+} from "../../data/constants.js";
 
 const Footer = () => {
   return (
@@ -34,19 +40,16 @@ const Footer = () => {
         </ul>
 
         <div className="footer_socials">
-          <a href="https://www.linkedin.com/in/edenim/" target="_blank">
+          <a href={linkedinLink} target="_blank">
             <FaLinkedinIn size={18} />
           </a>
-          <a href="https://github.com/Eden-Ismah-Moshe" target="_blank">
+          <a href={githubLink} target="_blank">
             <IoLogoGithub size={18} />
           </a>
-          <a
-            href="https://www.facebook.com/ismahm1?locale=he_IL"
-            target="_blank"
-          >
+          <a href={facebookLink} target="_blank">
             <FaFacebookF size={18} />
           </a>
-          <a href="https://www.instagram.com/eden_im/" target="_blank">
+          <a href={instagramLink} target="_blank">
             <FaInstagram size={18} />
           </a>
         </div>

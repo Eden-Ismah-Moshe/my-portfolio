@@ -41,7 +41,9 @@ const About = () => {
             <article className="about_card">
               <MdOutlineComputer className="about_icon" />
               <h5>Hackathon</h5>
-              <small>Participated in QueenB Hackathon</small>
+              <small>
+                Participated in <br /> QueenB Hackathon
+              </small>
             </article>
           </div>
           &nbsp;

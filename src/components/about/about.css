@@ -12,7 +12,7 @@ section#about h2 {
 
 .about_container {
   display: grid;
-  grid-template-columns: 40% 50%;
+  grid-template-columns: 40% 60%;
   gap: 10%;
   align-items: center;
 }
@@ -90,7 +90,8 @@ section#about h2 {
 }
 
 .about_content p {
-  margin: 2rem 0 2.6rem;
+  margin: 0.1rem 0 2rem;
+  margin-top: 0.1rem;
   /* color: var(--color-light);*/
   color: white;
 }

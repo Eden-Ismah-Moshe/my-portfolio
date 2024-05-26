@@ -7,21 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { GiTrafficCone } from "react-icons/gi";
-
-const data = [
-  {
-    name: "The Academic College of Tel Aviv-Yaffo",
-    title: "B.Sc. in Computer Science",
-    date: "2021 - present",
-    iconBg: "#f9a826",
-    icon: require("../../assets/The Academic College of Tel Aviv Yaffo.png"), // Assuming you have a valid icon URL or path here
-    points: [
-      "Experienced in programming languages including C, C++, Java, JavaScript and familiar with Python.",
-      "Experienced in using software tools such as Visual Studio, Intellij and PyCharm.",
-      "Skilled in using version control systems such as Git and GitHub.",
-    ],
-  },
-];
+import { myEducationData } from "../../data/constants.js";
 
 const Education = () => {
   return (
@@ -30,7 +16,7 @@ const Education = () => {
       <h2>Education</h2>
 
       <VerticalTimeline>
-        {data.map((education, index) => (
+        {myEducationData.map((education, index) => (
           <VerticalTimelineElement
             key={index}
             contentStyle={{
@@ -65,7 +51,7 @@ const Education = () => {
                 {education.name}
               </p>
             </div>
-            &nbsp;
+
             <ul className="mt-5 list-disc ml-5 space-y-2">
               {education.points.map((point, idx) => (
                 <li
