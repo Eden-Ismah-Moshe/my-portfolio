@@ -4,16 +4,19 @@ section#skills {
 
 section#skills h4 {
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 section#skills h2 {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .development_experience_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  justify-content: center;
 }
 
 .development_experience_container > div {
@@ -39,146 +42,88 @@ section#skills h2 {
 }
 
 .experience_content {
-  margin-left: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
-  column-gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add gap between skills */
 }
 
 .container.other_experience_container {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .other_experience_container > div {
   background: var(--color-bg-variant);
-  padding: 1rem 5rem;
+  padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
 
 .experience_content_others {
-  margin-left: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
-  column-gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add gap between skills */
 }
 
 .experience_item {
   display: flex;
-  gap: 1rem;
-}
-/* ==================== MEDIA QUERIS (VERY LARGE DEVICES) ====================== */
-
-@media screen and (min-width: 2040px) {
-}
-
-/* ==================== MEDIA QUERIS (MEDIUM-LARGE DEVICES) ====================== */
-
-@media screen and (min-width: 800px) {
-  .experience_content {
-    margin-left: 60px;
-    gap: 10px;
-  }
-
-  .experience_others {
-    text-align: center;
-    margin-left: 10px;
-  }
-
-  .experience_content_others {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin-left: 10px;
-  }
-
-  .experience_item {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-  }
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
 }
 
-/* ==================== MEDIA QUERIS (MEDIUM DEVICES) ====================== */
+.experience_item h4 {
+  margin: 0;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
 
 @media screen and (max-width: 1024px) {
   .development_experience_container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
+
   .development_experience_container > div {
-    width: 70%;
-    padding: 2rem;
+    width: 80%;
     margin: 0 auto;
+    padding: 2rem 1.5rem;
   }
 
   .container.other_experience_container {
-    width: 65%;
-    padding: 1rem 1rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .experience_content {
-    padding: 1rem;
+  .other_experience_container > div {
+    width: 100%;
+    padding: 2rem 1.5rem;
   }
 
-  .experience_others {
-    text-align: center;
-  }
-
+  .experience_content,
   .experience_content_others {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin-left: 10px;
-  }
-
-  .experience_item {
-    display: flex;
-    align-items: center;
-    padding: 1px;
+    padding: 1rem 0;
+    gap: 2rem; /* Add gap between skills */
   }
 }
 
-/* ==================== MEDIA QUERIS (SMALL DEVICES) ====================== */
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ====================== */
 
 @media screen and (max-width: 600px) {
-  .development_experience_container {
-    gap: 1rem;
-  }
-
-  .development_experience_container > div {
+  .development_experience_container > div,
+  .other_experience_container > div {
     width: 100%;
     padding: 2rem 1rem;
   }
 
-  .container.other_experience_container {
-    width: 95%;
-    padding: 1rem 1rem;
-  }
-
-  .experience_content {
-    padding: 1rem;
-  }
-
-  .experience_others {
-    text-align: center;
-  }
-
+  .experience_content,
   .experience_content_others {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin-left: 5px;
-  }
-
-  .experience_item {
-    display: flex;
-    align-items: center;
-    padding: 1px;
+    padding: 1rem 0;
+    gap: 2rem; /* Add gap between skills */
   }
 }

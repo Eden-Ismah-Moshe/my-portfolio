@@ -30,3 +30,20 @@ nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
 }
+
+/* ==================== MEDIA QUERIS (SMALL DEVICES) ====================== */
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5rem 1rem;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    gap: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
