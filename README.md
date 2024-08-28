@@ -5,6 +5,7 @@ Welcome to my portfolio! This repository showcases my skills and projects in fro
 ## Overview
 
 I developed this portfolio using JavaScript, CSS, and React. It highlights my proficiency in modern web development technologies and features a responsive design with interactive elements and seamless navigation.
+
 You can view the live portfolio [here](https://edenimportfolio.netlify.app/).
 
 ## Features
