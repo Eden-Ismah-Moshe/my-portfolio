@@ -38,13 +38,6 @@ const About = () => {
                 Programmer Instructor <br /> In QueenB
               </small>
             </article>
-            <article className="about_card">
-              <MdOutlineComputer className="about_icon" />
-              <h5>Hackathon</h5>
-              <small>
-                Participated in <br /> QueenB Hackathon
-              </small>
-            </article>
           </div>
           &nbsp;
           <p>{formatText(aboutMe)}</p>

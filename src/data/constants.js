@@ -27,18 +27,30 @@ export const myEducationData = [
 export const projectsData = [
   {
     id: 1,
-    image: require("../assets/stepper.jpg"),
-    title: "Stepper",
-    place: "The Academic College of Tel Aviv-Yafo",
-    tags: ["Java", "JavaFX"],
+    image: require("../assets/QueensMatch.jpg"),
+    title: "Queens Match",
+    place: "QueenB x AppsFlyer Bootcamp",
+    tags: ["React", "NodeJS", "PostgreSQL", "pgAdmin", "Docker"],
     description:
-      "Stepper is a workflow/pipeline system that enables the assembly of different scenarios from common components, including executing them and producing required results.",
-    github: "https://github.com/Eden-Ismah-Moshe/Stepper-V3-Client_Server",
+      "Queens Match is a mentorship platform that aims to connect mentors and mentees within the QueenB community.",
+    github: "https://github.com/Eden-Ismah-Moshe/Queen-B-Bootcamp",
     details:
-      "Stepper is a workflow/pipeline system that enables the assembly of different scenarios (called flows) from common components (called steps), including executing them and producing required results. The project includes various UI clients: Client-server. It includes a component that manages users and permissions, serving multiple clients concurrently and collecting information and statistics on their progress. ",
+      "Queens Match is a mentorship platform developed during the QueenB and AppsFlyer Bootcamp. It aims to connect mentors and mentees within the QueenB community, fostering relationships that encourage women in tech. This project was built by a team of three members as part of the QueenB Initiative. We used modern technologies to create a seamless experience for users, allowing them to find, register, and connect with mentors.",
   },
   {
     id: 2,
+    image: require("../assets/Dishcover.jpg"),
+    title: "Dishcover",
+    place: "The Academic College of Tel Aviv-Yafo",
+    tags: ["React Native", "Node.js", "MongoDB", "APIFY", "Python"],
+    description:
+      "Dishcover is a personalized restaurant recommendation app that helps users find the perfect dining spots.",
+    github: "https://github.com/Eden-Ismah-Moshe/Dishcover",
+    details:
+      "Dishcover is a personalized restaurant recommendation app that helps users find the perfect dining spots based on their preferences, past experiences, and current mood. The app leverages AI and machine learning to continuously refine recommendations, making dining out easier and more enjoyable.",
+  },
+  {
+    id: 3,
     image: require("../assets/instaguard.png"),
     title: "InstaGuard",
     place: "QueenB x AppsFlyer Hackathon",
@@ -50,7 +62,19 @@ export const projectsData = [
       "InstaGuard is a web application designed to address the growing concern of fake accounts on Instagram, which often lead to scams and catfishing, particularly alarming for parents and users alike.",
   },
   {
-    id: 3,
+    id: 4,
+    image: require("../assets/stepper.jpg"),
+    title: "Stepper",
+    place: "The Academic College of Tel Aviv-Yafo",
+    tags: ["Java", "JavaFX"],
+    description:
+      "Stepper is a workflow/pipeline system that enables the assembly of different scenarios from common components, including executing them and producing required results.",
+    github: "https://github.com/Eden-Ismah-Moshe/Stepper-V3-Client_Server",
+    details:
+      "Stepper is a workflow/pipeline system that enables the assembly of different scenarios (called flows) from common components (called steps), including executing them and producing required results. The project includes various UI clients: Client-server. It includes a component that manages users and permissions, serving multiple clients concurrently and collecting information and statistics on their progress. ",
+  },
+  {
+    id: 5,
     image: require("../assets/portfolio.jpg"),
     title: "Portfolio",
     place: "",

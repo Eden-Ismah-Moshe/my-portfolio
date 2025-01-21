@@ -21,8 +21,8 @@ const Skills = () => {
       <h4>What Skills I Have</h4>
       <h2>My Skills</h2>
       <div className="container development_experience_container">
-        <div className="experience_frontend">
-          <h3>Frontend Development</h3>
+        <div className="experience_development">
+          <h3>Development</h3>
           <div className="experience_content">
             <article className="experience_item">
               <FaHtml5 />
@@ -40,12 +40,14 @@ const Skills = () => {
               <FaReact />
               <h4>React</h4>
             </article>
-          </div>
-        </div>
-
-        <div className="experience_backend">
-          <h3>Backend Development</h3>
-          <div className="experience_content">
+            <article className="experience_item">
+              <FaReact />
+              <h4>React Native</h4>
+            </article>
+            <article className="experience_item">
+              <FaPython />
+              <h4>Python</h4>
+            </article>
             <article className="experience_item">
               <SiCoursera />
               <h4>C</h4>
@@ -57,15 +59,9 @@ const Skills = () => {
               <FaJava />
               <h4>Java</h4>
             </article>
-            <article className="experience_item">
-              <FaPython />
-              <h4>Python</h4>
-            </article>
           </div>
         </div>
-      </div>
-      &nbsp;
-      <div className="container other_experience_container">
+
         <div className="experience_others">
           <h3>Others</h3>
           <div className="experience_content_others">
@@ -96,6 +92,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      &nbsp;
     </section>
   );
 };
