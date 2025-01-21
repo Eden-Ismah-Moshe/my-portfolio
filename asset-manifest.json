@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.3cebc548.css",
+    "main.js": "/my-portfolio/static/js/main.37ef5e28.js",
+    "static/media/instaguard.png": "/my-portfolio/static/media/instaguard.1b59985520246dc955c5.png",
+    "static/media/portfolio.jpg": "/my-portfolio/static/media/portfolio.6c0591a3e1534d30dc54.jpg",
+    "static/media/Dishcover.jpg": "/my-portfolio/static/media/Dishcover.dce30c57d3fefa771789.jpg",
+    "static/media/QueensMatch.jpg": "/my-portfolio/static/media/QueensMatch.53f8dc3d7be46b30dcca.jpg",
+    "static/media/me1.png": "/my-portfolio/static/media/me1.333d6ba8922ec3f0c882.png",
+    "static/media/bg-texture.png": "/my-portfolio/static/media/bg-texture.3a1471f2da0e2229237f.png",
+    "static/media/stepper.jpg": "/my-portfolio/static/media/stepper.6a17f6701109f6daf02b.jpg",
+    "static/media/The Academic College of Tel Aviv Yaffo.png": "/my-portfolio/static/media/The Academic College of Tel Aviv Yaffo.112ea2aed484fdb9a63a.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.3cebc548.css.map": "/my-portfolio/static/css/main.3cebc548.css.map",
+    "main.37ef5e28.js.map": "/my-portfolio/static/js/main.37ef5e28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cebc548.css",
+    "static/js/main.37ef5e28.js"
+  ]
+}
